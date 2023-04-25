@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      
+      <header class="header">
+        <div class="header__wrapper">
+          <nav class="nav">
+            <div class="nav-left">
+              <img class="nav-logo" src="images/logo.svg" alt="logo">
+              <div class="links">
+                <div class="links__items">
+                  <ul>
+                    <li><a class="features" href="#">Features</a>
+                      <div class="sub-menu one">
+                        <a class="sub-link todo" href="#">Todo List</a>
+                        <a class="sub-link calendar" href="#">Calendar</a>
+                        <a class="sub-link reminders" href="#">Reminders</a>
+                        <a class="sub-link planning" href="#">Planning</a>
+                      </div>
+                    </li>
+                    <li><a class="company" href="#">Company</a>
+                      <div class="sub-menu two">
+                        <a class="sub-link history" href="#">History</a>
+                        <a class="sub-link team" href="#">Our Team</a>
+                        <a class="sub-link blog" href="#">Blog</a>
+                      </div>
+                    </li>
+                    <li><a class="careers" href="#">Careers</a></li>
+                    <li><a class="about" href="#">About</a></li>
+                  </ul>
+                  <div class="links__login-mobile">
+                    <button class="btn__login">Login</button>
+                    <button class="btn__register">Register</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="links__login">
+              <button class="btn__login">Login</button>
+              <button class="btn__register">Register</button>
+            </div>
+            <div class="hamb">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </nav>
+          <div class="nav-overlay"></div>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero__wrapper">
+          <div class="hero__text">
+            <h1>Make remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+              productivity soar.</p>
+            <button class="btn__hero">Learn more</button>
+            <div class="brands">
+              <img src="images/client-databiz.svg" alt="">
+              <img src="images/client-audiophile.svg" alt="">
+              <img src="images/client-meet.svg" alt="">
+              <img src="images/client-maker.svg" alt="">
+            </div>
+          </div>
+          <div class="hero__image">
+            <picture>
+              <source media="(max-width: 810px)" srcset="images/image-hero-mobile.png">
+              <img src="images/image-hero-desktop.png" alt="hero">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
