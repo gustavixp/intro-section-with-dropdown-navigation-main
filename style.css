@@ -14,11 +14,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 img,
 picture,
 video,
@@ -62,6 +57,7 @@ body {
   font-family: "Epilogue", sans-serif;
   font-size: 18px;
   line-height: 1.5;
+  min-height: 100%;
   overflow: hidden;
 }
 
@@ -84,6 +80,7 @@ body {
 }
 
 .header__wrapper {
+  position: relative;
   display: flex;
   padding: 1.5rem 1rem;
   width: clamp(300px, 100%, 2000px);
@@ -198,6 +195,14 @@ body {
   overflow: hidden;
   transition: opacity 0.2s ease-in-out, max-height 0.2s ease-in-out,
     margin 0.2s ease-in-out;
+}
+
+.sub-menu.one {
+  display: flex;
+}
+
+.sub-menu.two {
+  display: flex;
 }
 
 .sub-menu.show {
@@ -364,12 +369,14 @@ body {
   padding: 12px 25px;
   background-color: var(--neutral-black-800);
   color: white;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn__hero:hover {
   color: var(--neutral-black-800);
   background-color: white;
   outline: 1px solid var(--neutral-black-800);
+  transition: all 0.2s ease-in-out;
 }
 
 .brands {
@@ -496,7 +503,7 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 12px;
-    background: white;
+    background: transparent;
     padding: 8px 20px;
     font-size: 16px;
     margin-right: 20px;
@@ -558,6 +565,7 @@ body {
   }
 
   .sub-menu.one {
+    display: flex;
     left: -20px;
   }
 
@@ -633,7 +641,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 10px auto;
+    margin: 10px auto 100px;
   }
 
   .hero__image {
